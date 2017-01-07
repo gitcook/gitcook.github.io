@@ -1,6 +1,6 @@
 ---
 title: Hello World
-tag:
+tags:
     - Testing
     - Another Tag
 ---
