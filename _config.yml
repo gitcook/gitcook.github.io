@@ -5,7 +5,7 @@
 # Site
 title: Sweet Home
 subtitle:
-description:
+description: Less is More
 author: gitcook
 language: zh-Hans
 timezone:
@@ -63,7 +63,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: next
+theme: nextcustom
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
