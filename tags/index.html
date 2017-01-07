@@ -90,7 +90,7 @@
 <meta property="og:url" content="https://gitcook.github.io/tags/index.html">
 <meta property="og:site_name" content="CodeForFun">
 <meta property="og:description" content="Less Is More">
-<meta property="og:updated_time" content="2017-01-07T10:17:16.100Z">
+<meta property="og:updated_time" content="2017-01-07T12:51:09.702Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="tags">
 <meta name="twitter:description" content="Less Is More">
@@ -252,21 +252,6 @@
 
 
           
-  <div class="ds-thread" data-thread-key="<?php echo $node->nid;?>" data-title="<?php echo htmlspecialchars($node->title);?>" data-author-key="<?php echo $node->uid;?>"></div>
-<!-- 多说评论框 end -->
-<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-<script type="text/javascript">
-var duoshuoQuery = {short_name:"gitcook"};
-  (function() {
-    var ds = document.createElement('script');
-    ds.type = 'text/javascript';ds.async = true;
-    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-    ds.charset = 'UTF-8';
-    (document.getElementsByTagName('head')[0]
-     || document.getElementsByTagName('body')[0]).appendChild(ds);
-  })();
-  </script>
-
 
         </div>
         
@@ -458,30 +443,28 @@ var duoshuoQuery = {short_name:"gitcook"};
 
   
 
-  
-    
-  
-
-  <script type="text/javascript">
-    var duoshuoQuery = {short_name:"gitcook"};
-    (function() {
-      var ds = document.createElement('script');
-      ds.type = 'text/javascript';ds.async = true;
-      ds.id = 'duoshuo-script';
-      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-      ds.charset = 'UTF-8';
-      (document.getElementsByTagName('head')[0]
-      || document.getElementsByTagName('body')[0]).appendChild(ds);
-    })();
-  </script>
-
-  
-    
-    <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
-    <script src="/js/src/hook-duoshuo.js"></script>
-  
 
 
+  
+
+    <script type="text/javascript">
+      var disqus_shortname = 'gitcook';
+      var disqus_identifier = 'tags/index.html';
+      var disqus_title = "tags";
+      var disqus_url = 'https://gitcook.github.io/tags/index.html';
+
+      function run_disqus_script(disqus_script){
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      }
+
+      run_disqus_script('count.js');
+      
+    </script>
+  
 
 
 
