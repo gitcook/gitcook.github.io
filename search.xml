@@ -3,6 +3,13 @@
   
     
     <entry>
+      <title><![CDATA[2017 新的开始]]></title>
+      <url>%2F2017%2F01%2F08%2Fhello-2017%2F</url>
+      <content type="text"><![CDATA[新的一年刚刚开始，一转眼就毕业好多年了，2016年似乎一眨眼的功夫就过去了。2016年认真开始转行，进度甚微，经历了从开始到放弃又重新开始，失望、沮丧、苦涩等各种心境，2016最终熬过去了。希望2017年能够有一个新的开始，能够真正的充实的过好每一天，day day up！ 博客今年入驻了github，新的一年搭建了自己的博客，以后要坚持每周一篇博客，记录自己遇到的问题和经历。坚持一些自己喜欢的事情，希望既能帮助自己也能帮助他人。 github去年底开始学习前端，于是注册了github，从刚开始的什么都不懂，到慢慢的能够写一些简单的代码，很开心。编程真的是很有趣，看到自己写的代码运行起来，展示在自己和他人面前，非常有成就感。新的一年要在github上面投入更多的时间和精力，向里面的大神学习，写自己的项目，点满每一天，为github社区贡献一些自己的东西。 新年计划 今年看到了一些有趣的书籍，余华、王小波等，2017年想看更多的书籍，定个小目标20本。 加强自己沟通的能力，解决问题的能力，每天坚持写代码。 坚持健身，争取把腹肌给练出来。]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[hello world]]></title>
       <url>%2F2017%2F01%2F07%2Fhello-world%2F</url>
       <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
