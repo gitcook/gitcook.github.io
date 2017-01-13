@@ -761,7 +761,7 @@ pre .javascript .function {
   display: block;
   width: 22px;
   height: 2px;
-  background: rgba(0,0,0,0.9);
+  background: rgba(255,255,255,0.73);
   border-radius: 1px;
 }
 .btn-bar+.btn-bar {
@@ -905,7 +905,7 @@ pre .javascript .function {
 .brand {
   position: relative;
   display: inline-block;
-  padding: 0 80px;
+  padding: 0 50px;
   color: #8b00fb;
   background: transparent;
   line-height: 36px;
@@ -926,7 +926,7 @@ pre .javascript .function {
   display: inline-block;
   vertical-align: top;
   line-height: 56px;
-  font-size: 48px;
+  font-size: 35px;
   color: #f5f5f5;
   font-weight: normal;
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
@@ -1688,7 +1688,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #f66a34;
+  background: #4eff9f;
 }
 .links-of-blogroll {
   font-size: 13px;
