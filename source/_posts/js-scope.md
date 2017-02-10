@@ -25,12 +25,12 @@ JS权威指南中有一句很精辟的描述:　**”JavaScript中的函数运�
 ``` javascript
 var name = 'laruence';
 function echo() {
-	console.log(name);
+    console.log(name);
 }
 
 function env() {
-	var name = 'eve';
-	echo();
+    var name = 'eve';
+    echo();
 }
 
 env(); // laruence
