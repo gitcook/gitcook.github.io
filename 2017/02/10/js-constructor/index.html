@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="stay hungry stay foolish" />
+  <meta name="keywords" content="javascript,object," />
 
 
 
@@ -84,15 +84,19 @@
 
 
 
-<meta name="description" content="Where there is a will, there is a way">
-<meta property="og:type" content="website">
-<meta property="og:title" content="CodeForFun">
-<meta property="og:url" content="https://gitcook.github.io/categories/生活/index.html">
+<meta name="description" content="JavaScript 中的构造函数和其它语言中的构造函数是不同的。 通过new关键字方式调用的函数都被认为是构造函数。
+构造函数123456function Person(name) &amp;#123;    this.name = name;&amp;#125;var jack = new Person(&apos;杰克&apos;); // 当这一句代码结束,你就可以肯定的认为">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JavaScript构造函数学习笔记">
+<meta property="og:url" content="https://gitcook.github.io/2017/02/10/js-constructor/index.html">
 <meta property="og:site_name" content="CodeForFun">
-<meta property="og:description" content="Where there is a will, there is a way">
+<meta property="og:description" content="JavaScript 中的构造函数和其它语言中的构造函数是不同的。 通过new关键字方式调用的函数都被认为是构造函数。
+构造函数123456function Person(name) &amp;#123;    this.name = name;&amp;#125;var jack = new Person(&apos;杰克&apos;); // 当这一句代码结束,你就可以肯定的认为">
+<meta property="og:updated_time" content="2017-02-12T10:46:29.789Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="CodeForFun">
-<meta name="twitter:description" content="Where there is a will, there is a way">
+<meta name="twitter:title" content="JavaScript构造函数学习笔记">
+<meta name="twitter:description" content="JavaScript 中的构造函数和其它语言中的构造函数是不同的。 通过new关键字方式调用的函数都被认为是构造函数。
+构造函数123456function Person(name) &amp;#123;    this.name = name;&amp;#125;var jack = new Person(&apos;杰克&apos;); // 当这一句代码结束,你就可以肯定的认为">
 
 
 
@@ -113,10 +117,10 @@
 
 
 
-  <link rel="canonical" href="https://gitcook.github.io/categories/生活/"/>
+  <link rel="canonical" href="https://gitcook.github.io/2017/02/10/js-constructor/"/>
 
 
-  <title> 分类: 生活 | CodeForFun </title>
+  <title> JavaScript构造函数学习笔记 | CodeForFun </title>
 </head>
 
 <body itemscope itemtype="//schema.org/WebPage" lang="zh-Hans">
@@ -146,7 +150,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left  ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="//schema.org/WPHeader">
@@ -257,47 +261,190 @@
           <div id="content" class="content">
             
 
-  <section id="posts" class="posts-collapse">
-    <div class="collection-title">
-      <h2 >
-        生活
-        <small>分类</small>
-      </h2>
-    </div>
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
 
     
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                JavaScript构造函数学习笔记
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2017-02-10T13:57:04+08:00" content="2017-02-10">
+              2017-02-10
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/FontEnd/" itemprop="url" rel="index">
+                    <span itemprop="name">FontEnd</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2017/02/10/js-constructor/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2017/02/10/js-constructor/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2017/02/10/js-constructor/" class="leancloud_visitors" data-flag-title="JavaScript构造函数学习笔记">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
       
 
-  <article class="post post-type-normal" itemscope itemtype="//schema.org/Article">
-    <header class="post-header">
+      
+        <p>JavaScript 中的构造函数和其它语言中的构造函数是不同的。 通过<code>new</code>关键字方式调用的函数都被认为是构造函数。</p>
+<h4 id="构造函数"><a href="#构造函数" class="headerlink" title="构造函数"></a>构造函数</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params">name</span>) </span>&#123;</div><div class="line">    <span class="keyword">this</span>.name = name;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">var</span> jack = <span class="keyword">new</span> Person(<span class="string">'杰克'</span>); <span class="comment">// 当这一句代码结束,你就可以肯定的认为 </span></div><div class="line">                               <span class="comment">// Person 函数是一个构造函数,因为它 new 了"杰克"</span></div></pre></td></tr></table></figure>
+<p><strong>不是所有函数都是构造函数, 只有 new 出实例的函数才是构造函数.</strong><br><a id="more"></a><br>实例对象<code>jack</code>被构造函数 Person 实例化之后,它就有一个属性<code>constructor</code>,此属性是一个指针,指向构造函数 (告诉我们是谁创造了它)同时,实例对象<code>jack</code>初始化以后同时有了一个只读属性<code>__proto__</code> ,这个指针指向了原型对象.</p>
+<p><code>jack.__proto__ === Person.prototype</code>这是一定成立的.</p>
+<p>除了创建对象，构造函数(constructor) 还做了另一件有用的事情—自动为创建的新对象设置了原型对象(prototype object) 。原型对象存放于 ConstructorFunction.prototype 属性中。</p>
+<p>原型介绍请看<a href="https://gitcook.github.io/2017/02/08/js-prototype/">JavaScript原型学习笔记</a> </p>
+<p>参考资料<br><a href="https://bonsaiden.github.io/JavaScript-Garden/zh/#function.constructors" target="_blank" rel="external">https://bonsaiden.github.io/JavaScript-Garden/zh/#function.constructors</a><br><a href="http://www.nowamagic.net/librarys/veda/detail/1642" target="_blank" rel="external">http://www.nowamagic.net/librarys/veda/detail/1642</a><br><a href="http://yijiebuyi.com/blog/7193e9e04fa01c4d7c05ec5b29494d9d.html" target="_blank" rel="external">http://yijiebuyi.com/blog/7193e9e04fa01c4d7c05ec5b29494d9d.html</a> </p>
 
-      <h1 class="post-title">
+      
+    </div>
+
+    <div>
+      
         
-            <a class="post-title-link" href="/2017/01/08/hello-2017/" itemprop="url">
-              
-                <span itemprop="name">2017 新的开始</span>
-              
-            </a>
+
+      
+    </div>
+
+    <div>
+      
         
-      </h1>
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="/images/wechat.JPG" alt="gitcook WeChat Pay"/>
+          <p>微信打赏</p>
+        </div>
+      
+      
+        <div id="alipay" style="display: inline-block">
+          <img id="alipay_qr" src="/images/alipay.JPG" alt="gitcook Alipay"/>
+          <p>支付宝打赏</p>
+        </div>
+      
+    </div>
+  </div>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-01-08T22:41:11+08:00"
-              content="2017-01-08" >
-          01-08
-        </time>
-      </div>
 
-    </header>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/javascript/" rel="tag">#javascript</a>
+          
+            <a href="/tags/object/" rel="tag">#object</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/02/09/js-scope/" rel="next" title="JavaScript作用域学习笔记">
+                <i class="fa fa-chevron-left"></i> JavaScript作用域学习笔记
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/02/10/js-closure/" rel="prev" title="JavaScript闭包学习笔记">
+                JavaScript闭包学习笔记 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </article>
 
 
-    
-  </section>
 
-  
-
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -305,6 +452,17 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -324,8 +482,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="//schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.jpg"
@@ -404,6 +571,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#构造函数"><span class="nav-number">1.</span> <span class="nav-text">构造函数</span></a></li></ol></div>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -500,6 +678,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.2"></script>
+
+
 
   
 
@@ -516,9 +698,9 @@
 
     <script type="text/javascript">
       var disqus_shortname = 'gitcook';
-      var disqus_identifier = 'categories/生活/index.html';
-      var disqus_title = "";
-      var disqus_url = '';
+      var disqus_identifier = '2017/02/10/js-constructor/';
+      var disqus_title = "JavaScript构造函数学习笔记";
+      var disqus_url = 'https://gitcook.github.io/2017/02/10/js-constructor/';
 
       function run_disqus_script(disqus_script){
         var dsq = document.createElement('script');
@@ -529,6 +711,13 @@
       }
 
       run_disqus_script('count.js');
+      
+        var disqus_config = function () {
+            this.page.url = disqus_url;
+            this.page.identifier = disqus_identifier;
+            this.page.title = disqus_title;
+        };
+        run_disqus_script('embed.js');
       
     </script>
   
