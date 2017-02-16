@@ -884,7 +884,7 @@ pre .javascript .function {
   bottom: 19px;
 }
 .header {
-  background-image: url("http://ojf9z9wko.bkt.clouddn.com/banner.jpg");
+  background-image: url("http://ojf9z9wko.bkt.clouddn.com/image/banner.jpg");
 }
 .header-inner {
   position: relative;
@@ -1688,7 +1688,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #5cc7c2;
+  background: #985085;
 }
 .links-of-blogroll {
   font-size: 13px;
