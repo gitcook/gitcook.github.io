@@ -84,25 +84,28 @@
 
 
 
-<meta name="description" content="闭包是 JavaScript 一个非常重要的特性，这意味着当前作用域总是能够访问外部作用域中的变量。 因为函数是 JavaScript 中唯一拥有自身作用域的结构，因此闭包的创建依赖于函数。
-什么是闭包闭包的定义非常晦涩
+<meta name="description" content="对每个开发人员来说，面向对象编程都是必须要掌握的技能，但是JavaScript和其他语言不同，因为JavaScript本身不是面向对象的语言，而是基于对象的语言。而ECMAScript中面向对象编程的定义:
 
-闭包，是指语法域位于某个特定的区域，具有持续参照（读写）位于该区域内自身范围之外的执行域上的非持久型变量值能力的段落。这些外部执行域的非持久型变量神奇地保留它们在闭包最初定义（">
+ECMAScript是基于原型实现的面向对象编程语言。
+
+在面向对象的语言中，我们使用类来创建一个自定义对象。然而JavaScript中几乎所有事物都是对象，那么用什么办法来创建自定义对象呢">
 <meta property="og:type" content="article">
-<meta property="og:title" content="JavaScript闭包学习笔记">
-<meta property="og:url" content="https://gitcook.github.io/2017/02/10/js-closure/index.html">
+<meta property="og:title" content="JavaScript面向对象编程学习笔记">
+<meta property="og:url" content="https://gitcook.github.io/2017/02/17/js-oop/index.html">
 <meta property="og:site_name" content="CodeForFun">
-<meta property="og:description" content="闭包是 JavaScript 一个非常重要的特性，这意味着当前作用域总是能够访问外部作用域中的变量。 因为函数是 JavaScript 中唯一拥有自身作用域的结构，因此闭包的创建依赖于函数。
-什么是闭包闭包的定义非常晦涩
+<meta property="og:description" content="对每个开发人员来说，面向对象编程都是必须要掌握的技能，但是JavaScript和其他语言不同，因为JavaScript本身不是面向对象的语言，而是基于对象的语言。而ECMAScript中面向对象编程的定义:
 
-闭包，是指语法域位于某个特定的区域，具有持续参照（读写）位于该区域内自身范围之外的执行域上的非持久型变量值能力的段落。这些外部执行域的非持久型变量神奇地保留它们在闭包最初定义（">
-<meta property="og:updated_time" content="2017-02-12T10:46:29.789Z">
+ECMAScript是基于原型实现的面向对象编程语言。
+
+在面向对象的语言中，我们使用类来创建一个自定义对象。然而JavaScript中几乎所有事物都是对象，那么用什么办法来创建自定义对象呢">
+<meta property="og:updated_time" content="2017-02-17T13:58:47.289Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="JavaScript闭包学习笔记">
-<meta name="twitter:description" content="闭包是 JavaScript 一个非常重要的特性，这意味着当前作用域总是能够访问外部作用域中的变量。 因为函数是 JavaScript 中唯一拥有自身作用域的结构，因此闭包的创建依赖于函数。
-什么是闭包闭包的定义非常晦涩
+<meta name="twitter:title" content="JavaScript面向对象编程学习笔记">
+<meta name="twitter:description" content="对每个开发人员来说，面向对象编程都是必须要掌握的技能，但是JavaScript和其他语言不同，因为JavaScript本身不是面向对象的语言，而是基于对象的语言。而ECMAScript中面向对象编程的定义:
 
-闭包，是指语法域位于某个特定的区域，具有持续参照（读写）位于该区域内自身范围之外的执行域上的非持久型变量值能力的段落。这些外部执行域的非持久型变量神奇地保留它们在闭包最初定义（">
+ECMAScript是基于原型实现的面向对象编程语言。
+
+在面向对象的语言中，我们使用类来创建一个自定义对象。然而JavaScript中几乎所有事物都是对象，那么用什么办法来创建自定义对象呢">
 
 
 
@@ -123,10 +126,10 @@
 
 
 
-  <link rel="canonical" href="https://gitcook.github.io/2017/02/10/js-closure/"/>
+  <link rel="canonical" href="https://gitcook.github.io/2017/02/17/js-oop/"/>
 
 
-  <title> JavaScript闭包学习笔记 | CodeForFun </title>
+  <title> JavaScript面向对象编程学习笔记 | CodeForFun </title>
 </head>
 
 <body itemscope itemtype="//schema.org/WebPage" lang="zh-Hans">
@@ -288,7 +291,7 @@
             
             
               
-                JavaScript闭包学习笔记
+                JavaScript面向对象编程学习笔记
               
             
           </h1>
@@ -300,8 +303,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2017-02-10T16:45:39+08:00" content="2017-02-10">
-              2017-02-10
+            <time itemprop="dateCreated" datetime="2017-02-17T14:30:00+08:00" content="2017-02-17">
+              2017-02-17
             </time>
           </span>
 
@@ -330,8 +333,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2017/02/10/js-closure/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2017/02/10/js-closure/" itemprop="commentsCount"></span>
+                <a href="/2017/02/17/js-oop/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2017/02/17/js-oop/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -341,7 +344,7 @@
 
           
           
-             <span id="/2017/02/10/js-closure/" class="leancloud_visitors" data-flag-title="JavaScript闭包学习笔记">
+             <span id="/2017/02/17/js-oop/" class="leancloud_visitors" data-flag-title="JavaScript面向对象编程学习笔记">
                &nbsp; | &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -363,24 +366,29 @@
       
 
       
-        <p>闭包是 JavaScript 一个非常重要的特性，这意味着当前作用域总是能够访问外部作用域中的变量。 因为函数是 JavaScript 中唯一拥有自身作用域的结构，因此闭包的创建依赖于函数。</p>
-<h4 id="什么是闭包"><a href="#什么是闭包" class="headerlink" title="什么是闭包"></a>什么是闭包</h4><p>闭包的定义非常晦涩</p>
+        <p>对每个开发人员来说，面向对象编程都是必须要掌握的技能，但是JavaScript和其他语言不同，因为JavaScript本身不是面向对象的语言，而是基于对象的语言。而ECMAScript中面向对象编程的定义:</p>
 <blockquote>
-<p>闭包，是指语法域位于某个特定的区域，具有持续参照（读写）位于该区域内自身范围之外的执行域上的非持久型变量值能力的段落。这些外部执行域的非持久型变量神奇地保留它们在闭包最初定义（或创建）时的值（深连结）。</p>
+<p>ECMAScript是基于原型实现的面向对象编程语言。</p>
 </blockquote>
-<p>简单来说，闭包就是在另一个作用域中保存了一份它从上一级函数或作用域取得的变量（键值对），而这些键值对是不会随上一级函数的执行完成而销毁。<br><a id="more"></a><br>如果一个函数访问了它的外部变量，那么它就是一个闭包。</p>
-<p>注意，外部函数不是必需的。通过访问外部变量，一个闭包可以维持（keep alive）这些变量。在内部函数和外部函数的例子中，外部函数可以创建局部变量，并且最终退出；但是，如果任何一个或多个内部函数在它退出后却没有退出，那么内部函数就维持了外部函数的局部数据。</p>
-<h4 id="闭包的作用"><a href="#闭包的作用" class="headerlink" title="闭包的作用"></a>闭包的作用</h4><ul>
-<li>可以读取函数内部的变量。(保护函数内的变量安全)</li>
-<li>让这些变量的值始终保持在内存中。</li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">makeAdder</span>(<span class="params">x</span>) </span>&#123;</div><div class="line">    <span class="keyword">return</span> <span class="function"><span class="keyword">function</span>(<span class="params">y</span>) </span>&#123;</div><div class="line">        <span class="keyword">return</span> x + y;</div><div class="line">  &#125;;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">var</span> add5 = makeAdder(<span class="number">5</span>);</div><div class="line"><span class="keyword">var</span> add10 = makeAdder(<span class="number">10</span>);</div><div class="line"></div><div class="line"><span class="built_in">console</span>.log(add5(<span class="number">2</span>));  <span class="comment">// 7</span></div><div class="line"><span class="built_in">console</span>.log(add10(<span class="number">2</span>)); <span class="comment">// 12</span></div></pre></td></tr></table></figure>
-<p>add5 和 add10 都是闭包。它们共享相同的函数定义，但是保存了不同的环境。在 add5 的环境中，x 为 5。而在 add10 中，x 则为 10。</p>
-<p>makeAdder执行完以后变量x的值始终存在内存中，没有被回收。内部函数运行依赖外部函数的变量x。</p>
-<p>例子：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> singleton = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="keyword">var</span> privateVariable;</div><div class="line">    <span class="function"><span class="keyword">function</span> <span class="title">privateFunction</span>(<span class="params">x</span>) </span>&#123;</div><div class="line">        ...privateVariable...</div><div class="line">    &#125;</div><div class="line"> </div><div class="line">    <span class="keyword">return</span> &#123;</div><div class="line">        <span class="attr">firstMethod</span>: <span class="function"><span class="keyword">function</span> (<span class="params">a, b</span>) </span>&#123;</div><div class="line">            ...privateVariable...</div><div class="line">        &#125;,</div><div class="line">        <span class="attr">secondMethod</span>: <span class="function"><span class="keyword">function</span> (<span class="params">c</span>) </span>&#123;</div><div class="line">            ...privateFunction()...</div><div class="line">        &#125;</div><div class="line">    &#125;;</div><div class="line">&#125;();</div></pre></td></tr></table></figure></p>
-<p>这个单件通过闭包来实现。通过闭包完成了私有的成员和方法的封装。匿名主函数返回一个对象。对象包含了两个方法，方法1可以方法私有变量，方法2访 问内部私有函数。需要注意的地方是匿名主函数结束的地方的’()’，如果没有这个’()’就不能产生单件。因为匿名函数只能返回了唯一的对象，而且不能被 其他地方调用。这个就是利用闭包产生单件的方法。</p>
-<p>理解JavaScript的闭包是迈向高级JS程序员的必经之路，理解了其解释和运行机制才能写出更为安全和优雅的代码。</p>
-<p>参考资料<br><a href="http://www.ruanyifeng.com/blog/2009/08/learning_javascript_closures.html" target="_blank" rel="external">http://www.ruanyifeng.com/blog/2009/08/learning_javascript_closures.html</a><br><a href="http://www.oschina.net/question/28_41112" target="_blank" rel="external">http://www.oschina.net/question/28_41112</a><br><a href="http://www.jb51.net/article/18303.htm" target="_blank" rel="external">http://www.jb51.net/article/18303.htm</a> </p>
+<p>在面向对象的语言中，我们使用类来创建一个自定义对象。然而JavaScript中几乎所有事物都是对象，那么用什么办法来创建自定义对象呢？</p>
+<p>这就需要引入另外一个概念 - 原型（prototype），我们可以简单的把prototype看做是一个模版，新创建的自定义对象都是这个模版（prototype）的一个拷贝 （实际上不是拷贝而是链接，只不过这种链接是不可见，给人们的感觉好像是拷贝）。<br><a id="more"></a></p>
+<h3 id="实例对象"><a href="#实例对象" class="headerlink" title="实例对象"></a>实例对象</h3><p>来看一个例子：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//构造函数</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params">name, age, sex</span>)</span>&#123;</div><div class="line">    <span class="keyword">this</span>.name = name;</div><div class="line">    <span class="keyword">this</span>.age = age;</div><div class="line">    <span class="keyword">this</span>.sex = sex;</div><div class="line">&#125;</div><div class="line"></div><div class="line"> <span class="comment">// 定义Person的原型，原型中的属性可以被自定义对象引用</span></div><div class="line">Person.prototype.getName = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="keyword">return</span> <span class="keyword">this</span>.name;</div><div class="line">&#125;;</div><div class="line"></div><div class="line">Person.prototype.getAge = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="keyword">return</span> <span class="keyword">this</span>.age;</div><div class="line">&#125;;</div><div class="line"><span class="comment">// 注意如果用对象字面量的形式创建，`constructor`的指向会改变。</span></div></pre></td></tr></table></figure></p>
+<p>这里我们把函数Person称为构造函数，也就是创建自定义对象的函数。可以看出，JavaScript通过构造函数和原型的方式模拟实现了类的功能。<br>创建自定义对象（实例化类）的代码：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> zhangsan = <span class="keyword">new</span> Person(<span class="string">'zhangsan'</span>, <span class="number">25</span>, <span class="string">'male'</span>);</div><div class="line"><span class="built_in">console</span>.log(zhangsan.getName()); <span class="comment">// zhangsan</span></div><div class="line"><span class="built_in">console</span>.log(zhangsan.constructor == Person); <span class="comment">// true</span></div></pre></td></tr></table></figure></p>
+<p>Javascript规定，每一个构造函数都有一个<code>prototype</code>属性，指向另一个对象。这个对象的所有属性和方法，都会被构造函数的实例继承。而实例会有一个<code>constructor</code>属性指向它们的构造函数。</p>
+<p><code>isPrototypeOf()</code>这个方法可以来判断某个prototype对象和某个实例间的关系。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">console.log(Person.prototype.isPrototypeOf(zhangsan)); // true</div></pre></td></tr></table></figure></p>
+<p><code>hasOwnProperty()</code>用来判断某一个属性到底是本地属性，还是继承自prototype对象的属性。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">console.log(zhangsan.hasOwnProperty(&apos;name&apos;)); // true</div><div class="line">console.log(zhangsan.hasOwnProperty(&apos;getName&apos;)); // false</div></pre></td></tr></table></figure>
+<h3 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h3><p>现在有2个构造函数：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">function Parent(name) &#123;</div><div class="line">    this.name = name;</div><div class="line">&#125;</div><div class="line"></div><div class="line">function Child(age) &#123;</div><div class="line">    this.age = age;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>如何让Child继承name？</p>
+<h4 id="构造函数继承"><a href="#构造函数继承" class="headerlink" title="构造函数继承"></a>构造函数继承</h4><p>使用call或apply方法，将父对象的构造函数绑定在子对象上。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Parent</span>(<span class="params">name</span>) </span>&#123;</div><div class="line">    <span class="keyword">this</span>.name = name;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Child</span>(<span class="params">name, age</span>) </span>&#123;</div><div class="line">    Parent.call(<span class="keyword">this</span>, name);</div><div class="line">    <span class="keyword">this</span>.age = age;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">var</span> anni = <span class="keyword">new</span> Child(<span class="string">'anni'</span>, <span class="number">12</span>);</div><div class="line">anni.name <span class="comment">// anni</span></div></pre></td></tr></table></figure>
+<h4 id="prototype模式"><a href="#prototype模式" class="headerlink" title="prototype模式"></a>prototype模式</h4><p>如果Child的prototype对象，指向一个Parent的实例，那么所有Child的实例，就能继承Parent了。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">Child.prototype = <span class="keyword">new</span> Parent();</div><div class="line">Child.prototype.constructor = Child;<span class="comment">//让构造函数指回Child，而不是Parent</span></div><div class="line"><span class="keyword">var</span> jack = <span class="keyword">new</span> Child(<span class="string">'jack'</span>, <span class="number">22</span>);</div><div class="line">jack.name ;<span class="comment">// jack</span></div></pre></td></tr></table></figure>
+<h4 id="空对象中介"><a href="#空对象中介" class="headerlink" title="空对象中介"></a>空对象中介</h4><p>其实原理依然是prototype。直接继承至Parent.prototype。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">extend</span>(<span class="params">Child, Parent</span>) </span>&#123;</div><div class="line">    <span class="keyword">var</span> F = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;;</div><div class="line">    F.prototype = Parent.prototype;</div><div class="line">    Child.prototype = <span class="keyword">new</span> F();</div><div class="line">    Child.prototype.constructor = Child;</div><div class="line">    Child.uber = Parent.prototype;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h4 id="非构造函数"><a href="#非构造函数" class="headerlink" title="非构造函数"></a>非构造函数</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">object</span>(<span class="params">o</span>) </span>&#123;</div><div class="line">    <span class="function"><span class="keyword">function</span> <span class="title">F</span>(<span class="params"></span>) </span>&#123;&#125;</div><div class="line">    F.prototype = o;</div><div class="line">    <span class="keyword">return</span> <span class="keyword">new</span> F();</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h4 id="拷贝"><a href="#拷贝" class="headerlink" title="拷贝"></a>拷贝</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">deepCopy</span>(<span class="params">p, c</span>) </span>&#123;</div><div class="line">    <span class="keyword">var</span> c = c || &#123;&#125;;</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i <span class="keyword">in</span> p) &#123;</div><div class="line">        <span class="keyword">if</span> (<span class="keyword">typeof</span> p[i] === <span class="string">'object'</span>) &#123;</div><div class="line">            c[i] = (p[i].constructor === <span class="built_in">Array</span>) ? [] : &#123;&#125;;</div><div class="line">            deepCopy(p[i], c[i]);</div><div class="line">        &#125; <span class="keyword">else</span> &#123;</div><div class="line">            c[i] = p[i];</div><div class="line">           &#125;</div><div class="line">     &#125;</div><div class="line">    <span class="keyword">return</span> c;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>参考资料：<br><a href="http://www.ruanyifeng.com/blog/2010/05/object-oriented_javascript_inheritance_continued.html" target="_blank" rel="external">http://www.ruanyifeng.com/blog/2010/05/object-oriented_javascript_inheritance_continued.html</a><br><a href="https://segmentfault.com/a/1190000002440502" target="_blank" rel="external">https://segmentfault.com/a/1190000002440502</a><br><a href="http://www.cnblogs.com/sanshi/archive/2009/07/08/1519036.html" target="_blank" rel="external">http://www.cnblogs.com/sanshi/archive/2009/07/08/1519036.html</a> </p>
 
       
     </div>
@@ -435,16 +443,16 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/02/10/js-constructor/" rel="next" title="JavaScript构造函数学习笔记">
-                <i class="fa fa-chevron-left"></i> JavaScript构造函数学习笔记
+              <a href="/2017/02/10/js-closure/" rel="next" title="JavaScript闭包学习笔记">
+                <i class="fa fa-chevron-left"></i> JavaScript闭包学习笔记
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/02/17/js-oop/" rel="prev" title="JavaScript面向对象编程学习笔记">
-                JavaScript面向对象编程学习笔记 <i class="fa fa-chevron-right"></i>
+              <a href="/2017/03/01/chrome-extension/" rel="prev" title="Chrome 常用扩展集合">
+                Chrome 常用扩展集合 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -595,7 +603,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#什么是闭包"><span class="nav-number">1.</span> <span class="nav-text">什么是闭包</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#闭包的作用"><span class="nav-number">2.</span> <span class="nav-text">闭包的作用</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#实例对象"><span class="nav-number">1.</span> <span class="nav-text">实例对象</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#继承"><span class="nav-number">2.</span> <span class="nav-text">继承</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#构造函数继承"><span class="nav-number">2.1.</span> <span class="nav-text">构造函数继承</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#prototype模式"><span class="nav-number">2.2.</span> <span class="nav-text">prototype模式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#空对象中介"><span class="nav-number">2.3.</span> <span class="nav-text">空对象中介</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#非构造函数"><span class="nav-number">2.4.</span> <span class="nav-text">非构造函数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#拷贝"><span class="nav-number">2.5.</span> <span class="nav-text">拷贝</span></a></li></ol></li></ol></div>
             
           </div>
         </section>
@@ -715,9 +723,9 @@
 
     <script type="text/javascript">
       var disqus_shortname = 'gitcook';
-      var disqus_identifier = '2017/02/10/js-closure/';
-      var disqus_title = "JavaScript闭包学习笔记";
-      var disqus_url = 'https://gitcook.github.io/2017/02/10/js-closure/';
+      var disqus_identifier = '2017/02/17/js-oop/';
+      var disqus_title = "JavaScript面向对象编程学习笔记";
+      var disqus_url = 'https://gitcook.github.io/2017/02/17/js-oop/';
 
       function run_disqus_script(disqus_script){
         var dsq = document.createElement('script');
