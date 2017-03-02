@@ -11,6 +11,9 @@
            data-width="{{ theme.facebook_comments_plugin.width }}"
            data-colorscheme="{{ theme.facebook_comments_plugin.scheme }}">
       </div>
+    {% elseif theme.livere_uid %}
+      <div id="lv-container" data-id="city" data-uid="{{ theme.livere_uid }}">
+      </div>
     {% elseif theme.disqus_shortname %}
       <div id="disqus_thread">
         <noscript>
