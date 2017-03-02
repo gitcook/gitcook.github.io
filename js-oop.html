@@ -84,22 +84,28 @@
 
 
 
-<meta name="description" content="Javascript是一种基于对象（object-based）的语言，你遇到的所有东西几乎都是对象。但是，它又不是一种真正的面向对象编程（OOP）语言，因为它的语法中没有class（类）。
-JavaScript 不包含传统的类继承模型，而是使用 prototype原型模型。虽然这经常被当作是 JavaScript 的缺点被提及，其实基于原型的继承模型比传统的类继承还要强大。实现传统的类继承模型是很">
+<meta name="description" content="对每个开发人员来说，面向对象编程都是必须要掌握的技能，但是JavaScript和其他语言不同，因为JavaScript本身不是面向对象的语言，而是基于对象的语言。而ECMAScript中面向对象编程的定义:
+
+ECMAScript是基于原型实现的面向对象编程语言。
+
+在面向对象的语言中，我们使用类来创建一个自定义对象。然而JavaScript中几乎所有事物都是对象，那么用什么办法来创建自定义对象呢">
 <meta property="og:type" content="article">
-<meta property="og:title" content="JavaScript原型学习笔记">
-<meta property="og:url" content="https://gitcook.github.io/2017/02/08/js-prototype/index.html">
+<meta property="og:title" content="JavaScript面向对象编程学习笔记">
+<meta property="og:url" content="https://gitcook.github.io/js-oop.html">
 <meta property="og:site_name" content="CodeForFun">
-<meta property="og:description" content="Javascript是一种基于对象（object-based）的语言，你遇到的所有东西几乎都是对象。但是，它又不是一种真正的面向对象编程（OOP）语言，因为它的语法中没有class（类）。
-JavaScript 不包含传统的类继承模型，而是使用 prototype原型模型。虽然这经常被当作是 JavaScript 的缺点被提及，其实基于原型的继承模型比传统的类继承还要强大。实现传统的类继承模型是很">
-<meta property="og:image" content="http://ojf9z9wko.bkt.clouddn.com/image/js-prototype.png">
-<meta property="og:image" content="http://ojf9z9wko.bkt.clouddn.com/image/js-prototype-chain.jpg">
-<meta property="og:updated_time" content="2017-02-09T13:13:29.853Z">
+<meta property="og:description" content="对每个开发人员来说，面向对象编程都是必须要掌握的技能，但是JavaScript和其他语言不同，因为JavaScript本身不是面向对象的语言，而是基于对象的语言。而ECMAScript中面向对象编程的定义:
+
+ECMAScript是基于原型实现的面向对象编程语言。
+
+在面向对象的语言中，我们使用类来创建一个自定义对象。然而JavaScript中几乎所有事物都是对象，那么用什么办法来创建自定义对象呢">
+<meta property="og:updated_time" content="2017-02-17T13:58:47.289Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="JavaScript原型学习笔记">
-<meta name="twitter:description" content="Javascript是一种基于对象（object-based）的语言，你遇到的所有东西几乎都是对象。但是，它又不是一种真正的面向对象编程（OOP）语言，因为它的语法中没有class（类）。
-JavaScript 不包含传统的类继承模型，而是使用 prototype原型模型。虽然这经常被当作是 JavaScript 的缺点被提及，其实基于原型的继承模型比传统的类继承还要强大。实现传统的类继承模型是很">
-<meta name="twitter:image" content="http://ojf9z9wko.bkt.clouddn.com/image/js-prototype.png">
+<meta name="twitter:title" content="JavaScript面向对象编程学习笔记">
+<meta name="twitter:description" content="对每个开发人员来说，面向对象编程都是必须要掌握的技能，但是JavaScript和其他语言不同，因为JavaScript本身不是面向对象的语言，而是基于对象的语言。而ECMAScript中面向对象编程的定义:
+
+ECMAScript是基于原型实现的面向对象编程语言。
+
+在面向对象的语言中，我们使用类来创建一个自定义对象。然而JavaScript中几乎所有事物都是对象，那么用什么办法来创建自定义对象呢">
 
 
 
@@ -120,10 +126,10 @@ JavaScript 不包含传统的类继承模型，而是使用 prototype原型模�
 
 
 
-  <link rel="canonical" href="https://gitcook.github.io/2017/02/08/js-prototype/"/>
+  <link rel="canonical" href="https://gitcook.github.io/js-oop.html"/>
 
 
-  <title> JavaScript原型学习笔记 | CodeForFun </title>
+  <title> JavaScript面向对象编程学习笔记 | CodeForFun </title>
 </head>
 
 <body itemscope itemtype="//schema.org/WebPage" lang="zh-Hans">
@@ -285,7 +291,7 @@ JavaScript 不包含传统的类继承模型，而是使用 prototype原型模�
             
             
               
-                JavaScript原型学习笔记
+                JavaScript面向对象编程学习笔记
               
             
           </h1>
@@ -297,8 +303,8 @@ JavaScript 不包含传统的类继承模型，而是使用 prototype原型模�
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2017-02-08T13:34:16+08:00" content="2017-02-08">
-              2017-02-08
+            <time itemprop="dateCreated" datetime="2017-02-17T14:30:00+08:00" content="2017-02-17">
+              2017-02-17
             </time>
           </span>
 
@@ -327,8 +333,8 @@ JavaScript 不包含传统的类继承模型，而是使用 prototype原型模�
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2017/02/08/js-prototype/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2017/02/08/js-prototype/" itemprop="commentsCount"></span>
+                <a href="/js-oop.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="js-oop.html" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -338,7 +344,7 @@ JavaScript 不包含传统的类继承模型，而是使用 prototype原型模�
 
           
           
-             <span id="/2017/02/08/js-prototype/" class="leancloud_visitors" data-flag-title="JavaScript原型学习笔记">
+             <span id="/js-oop.html" class="leancloud_visitors" data-flag-title="JavaScript面向对象编程学习笔记">
                &nbsp; | &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -360,22 +366,29 @@ JavaScript 不包含传统的类继承模型，而是使用 prototype原型模�
       
 
       
-        <p>Javascript是一种基于对象（object-based）的语言，你遇到的所有东西几乎都是对象。但是，它又不是一种真正的面向对象编程（OOP）语言，因为它的语法中没有<code>class</code>（类）。</p>
-<p>JavaScript 不包含传统的类继承模型，而是使用 prototype原型模型。虽然这经常被当作是 JavaScript 的缺点被提及，其实基于原型的继承模型比传统的类继承还要强大。实现传统的类继承模型是很简单，但是实现 JavaScript 中的原型继承则要困难的多。</p>
-<h4 id="什么是原型？"><a href="#什么是原型？" class="headerlink" title="什么是原型？"></a>什么是原型？</h4><p>原型是一个对象，通过原型可以实现对象的属性继承。而对象是若干个无序属性的集合。对象的属性为字符串。<br><a id="more"></a></p>
-<h4 id="那些对象有原型"><a href="#那些对象有原型" class="headerlink" title="那些对象有原型"></a>那些对象有原型</h4><p>所有的对象在默认的情况下都有一个原型，因为原型本身也是对象，所以每个原型自身又有一个原型(只有一种例外，默认的对象原型在原型链的顶端。即Object.protorype)。</p>
-<h4 id="认识原型"><a href="#认识原型" class="headerlink" title="认识原型"></a>认识原型</h4><p>在JavaScript的对象中都包含了一个”[[Prototype]]”内部属性，这个属性所对应的就是该对象的原型。“[[Prototype]]”作为对象的内部属性，是不能被直接访问的。所以为了方便查看一个对象的原型，Firefox和Chrome中提供了<code>__proto__</code>这个非标准（不是所有浏览器都支持）的访问器（ECMA引入了标准对象原型访问器<code>Object.getPrototypeOf(object)</code>）。在JavaScript的原型对象中，还包含一个<code>constructor</code>属性，这个属性对应创建所有指向该原型的实例的构造函数。</p>
-<h5 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h5><p>方法这个特殊的对象除了和其他对象一样有<code>__proto__</code>属性之外，还有自己特有的属性——原型属性（prototype）。这个属性是一个指针，指向一个对象。这个对象的用途是包含所有实例共享的属性和方法（我们把这个对象叫做原型对象）。原型对象也有一个属性，叫做<code>constructor</code>，这个属性包含一个指针，指回原<strong>构造函数</strong>.</p>
-<p><strong><em>任何一个对象都有<code>constructor</code>属性，指向创建这个对象的构造函数。</em></strong></p>
-<p><strong><em>隐式原型（<code>__proto__</code>）指向创建这个对象的函数的prototype。</em></strong></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">function</span> Foo(y)&#123;</div><div class="line">    this.y = y;// 构造函数将会以特定模式创建对象：被创建的对象都会有<span class="string">"y"</span>属性</div><div class="line">&#125;</div><div class="line"></div><div class="line">Foo.prototype.x = 10;</div><div class="line"></div><div class="line">Foo.prototype.calculate = <span class="keyword">function</span>(z) &#123;</div><div class="line">    <span class="built_in">return</span> this.x + this.y + z;</div><div class="line">&#125;;</div><div class="line"></div><div class="line">var b = new Foo(20);</div><div class="line">var c = new Foo(30);</div><div class="line"></div><div class="line">console.log(b.calculate(30)); // 10 + 20 + 30 = 60</div><div class="line">console.log(c.calculate(50)); // 10 + 30 + 50 = 90</div><div class="line"></div><div class="line">// 让我们看看是否使用了预期的属性</div><div class="line"></div><div class="line">console.log(</div><div class="line"></div><div class="line">  b.__proto__ === Foo.prototype, // <span class="literal">true</span></div><div class="line">  c.__proto__ === Foo.prototype, // <span class="literal">true</span></div><div class="line"></div><div class="line">  // <span class="string">"Foo.prototype"</span>自动创建了一个特殊的属性<span class="string">"constructor"</span></div><div class="line">  // 指向a的构造函数本身</div><div class="line">  // 实例<span class="string">"b"</span>和<span class="string">"c"</span>可以通过授权找到它并用以检测自己的构造函数</div><div class="line"></div><div class="line">  b.constructor === Foo, // <span class="literal">true</span></div><div class="line">  c.constructor === Foo, // <span class="literal">true</span></div><div class="line">  Foo.prototype.constructor === Foo // <span class="literal">true</span></div><div class="line"></div><div class="line">  b.calculate === b.__proto__.calculate, // <span class="literal">true</span></div><div class="line">  b.__proto__.calculate === Foo.prototype.calculate // <span class="literal">true</span></div><div class="line"></div><div class="line">);</div></pre></td></tr></table></figure>
-<p><img src="http://ojf9z9wko.bkt.clouddn.com/image/js-prototype.png" alt="原型"></p>
-<h5 id="原型链"><a href="#原型链" class="headerlink" title="原型链"></a>原型链</h5><p>如果一个原型对象的原型不为null的话，我们就称之为原型链。</p>
-<h5 id="属性查找"><a href="#属性查找" class="headerlink" title="属性查找"></a>属性查找</h5><p>当查找一个对象的属性时，JavaScript 会向上遍历原型链，直到找到给定名称的属性为止，到查找到达原型链的顶部 - 也就是 Object.prototype - 但是仍然没有找到指定的属性，就会返回 undefined。例子：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">function</span> <span class="function"><span class="title">foo</span></span>() &#123;</div><div class="line">    this.add = <span class="keyword">function</span> (x, y) &#123;</div><div class="line">        <span class="built_in">return</span> x + y;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">foo.prototype.add = <span class="keyword">function</span> (x, y) &#123;</div><div class="line">    <span class="built_in">return</span> x + y + 10;</div><div class="line">&#125;</div><div class="line"></div><div class="line">Object.prototype.subtract = <span class="keyword">function</span> (x, y) &#123;</div><div class="line">    <span class="built_in">return</span> x - y;</div><div class="line">&#125;</div><div class="line"></div><div class="line">var f = new foo();</div><div class="line">console.log(f.add(1, 2)); //结果是3，而不是13</div><div class="line">console.log(f.subtract(1, 2)); //结果是-1</div></pre></td></tr></table></figure></p>
-<p>属性在查找的时候是先查找自身的属性，如果没有再查找原型，再没有，再往上走，一直查到Object的原型上。</p>
-<p>再上一张图来表示<code>__proto__</code>和<code>prototype</code>的关系。</p>
-<p><img src="http://ojf9z9wko.bkt.clouddn.com/image/js-prototype-chain.jpg" alt="原型链"></p>
-<p>参考文献<br><a href="http://www.nowamagic.net/librarys/veda/detail/1648" target="_blank" rel="external">http://www.nowamagic.net/librarys/veda/detail/1648</a><br><a href="http://www.jb51.net/article/80109.htm" target="_blank" rel="external">http://www.jb51.net/article/80109.htm</a></p>
+        <p>对每个开发人员来说，面向对象编程都是必须要掌握的技能，但是JavaScript和其他语言不同，因为JavaScript本身不是面向对象的语言，而是基于对象的语言。而ECMAScript中面向对象编程的定义:</p>
+<blockquote>
+<p>ECMAScript是基于原型实现的面向对象编程语言。</p>
+</blockquote>
+<p>在面向对象的语言中，我们使用类来创建一个自定义对象。然而JavaScript中几乎所有事物都是对象，那么用什么办法来创建自定义对象呢？</p>
+<p>这就需要引入另外一个概念 - 原型（prototype），我们可以简单的把prototype看做是一个模版，新创建的自定义对象都是这个模版（prototype）的一个拷贝 （实际上不是拷贝而是链接，只不过这种链接是不可见，给人们的感觉好像是拷贝）。<br><a id="more"></a></p>
+<h3 id="实例对象"><a href="#实例对象" class="headerlink" title="实例对象"></a>实例对象</h3><p>来看一个例子：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//构造函数</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params">name, age, sex</span>)</span>&#123;</div><div class="line">    <span class="keyword">this</span>.name = name;</div><div class="line">    <span class="keyword">this</span>.age = age;</div><div class="line">    <span class="keyword">this</span>.sex = sex;</div><div class="line">&#125;</div><div class="line"></div><div class="line"> <span class="comment">// 定义Person的原型，原型中的属性可以被自定义对象引用</span></div><div class="line">Person.prototype.getName = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="keyword">return</span> <span class="keyword">this</span>.name;</div><div class="line">&#125;;</div><div class="line"></div><div class="line">Person.prototype.getAge = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="keyword">return</span> <span class="keyword">this</span>.age;</div><div class="line">&#125;;</div><div class="line"><span class="comment">// 注意如果用对象字面量的形式创建，`constructor`的指向会改变。</span></div></pre></td></tr></table></figure></p>
+<p>这里我们把函数Person称为构造函数，也就是创建自定义对象的函数。可以看出，JavaScript通过构造函数和原型的方式模拟实现了类的功能。<br>创建自定义对象（实例化类）的代码：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> zhangsan = <span class="keyword">new</span> Person(<span class="string">'zhangsan'</span>, <span class="number">25</span>, <span class="string">'male'</span>);</div><div class="line"><span class="built_in">console</span>.log(zhangsan.getName()); <span class="comment">// zhangsan</span></div><div class="line"><span class="built_in">console</span>.log(zhangsan.constructor == Person); <span class="comment">// true</span></div></pre></td></tr></table></figure></p>
+<p>Javascript规定，每一个构造函数都有一个<code>prototype</code>属性，指向另一个对象。这个对象的所有属性和方法，都会被构造函数的实例继承。而实例会有一个<code>constructor</code>属性指向它们的构造函数。</p>
+<p><code>isPrototypeOf()</code>这个方法可以来判断某个prototype对象和某个实例间的关系。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">console.log(Person.prototype.isPrototypeOf(zhangsan)); // true</div></pre></td></tr></table></figure></p>
+<p><code>hasOwnProperty()</code>用来判断某一个属性到底是本地属性，还是继承自prototype对象的属性。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">console.log(zhangsan.hasOwnProperty(&apos;name&apos;)); // true</div><div class="line">console.log(zhangsan.hasOwnProperty(&apos;getName&apos;)); // false</div></pre></td></tr></table></figure>
+<h3 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h3><p>现在有2个构造函数：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">function Parent(name) &#123;</div><div class="line">    this.name = name;</div><div class="line">&#125;</div><div class="line"></div><div class="line">function Child(age) &#123;</div><div class="line">    this.age = age;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>如何让Child继承name？</p>
+<h4 id="构造函数继承"><a href="#构造函数继承" class="headerlink" title="构造函数继承"></a>构造函数继承</h4><p>使用call或apply方法，将父对象的构造函数绑定在子对象上。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Parent</span>(<span class="params">name</span>) </span>&#123;</div><div class="line">    <span class="keyword">this</span>.name = name;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Child</span>(<span class="params">name, age</span>) </span>&#123;</div><div class="line">    Parent.call(<span class="keyword">this</span>, name);</div><div class="line">    <span class="keyword">this</span>.age = age;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">var</span> anni = <span class="keyword">new</span> Child(<span class="string">'anni'</span>, <span class="number">12</span>);</div><div class="line">anni.name <span class="comment">// anni</span></div></pre></td></tr></table></figure>
+<h4 id="prototype模式"><a href="#prototype模式" class="headerlink" title="prototype模式"></a>prototype模式</h4><p>如果Child的prototype对象，指向一个Parent的实例，那么所有Child的实例，就能继承Parent了。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">Child.prototype = <span class="keyword">new</span> Parent();</div><div class="line">Child.prototype.constructor = Child;<span class="comment">//让构造函数指回Child，而不是Parent</span></div><div class="line"><span class="keyword">var</span> jack = <span class="keyword">new</span> Child(<span class="string">'jack'</span>, <span class="number">22</span>);</div><div class="line">jack.name ;<span class="comment">// jack</span></div></pre></td></tr></table></figure>
+<h4 id="空对象中介"><a href="#空对象中介" class="headerlink" title="空对象中介"></a>空对象中介</h4><p>其实原理依然是prototype。直接继承至Parent.prototype。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">extend</span>(<span class="params">Child, Parent</span>) </span>&#123;</div><div class="line">    <span class="keyword">var</span> F = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;;</div><div class="line">    F.prototype = Parent.prototype;</div><div class="line">    Child.prototype = <span class="keyword">new</span> F();</div><div class="line">    Child.prototype.constructor = Child;</div><div class="line">    Child.uber = Parent.prototype;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h4 id="非构造函数"><a href="#非构造函数" class="headerlink" title="非构造函数"></a>非构造函数</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">object</span>(<span class="params">o</span>) </span>&#123;</div><div class="line">    <span class="function"><span class="keyword">function</span> <span class="title">F</span>(<span class="params"></span>) </span>&#123;&#125;</div><div class="line">    F.prototype = o;</div><div class="line">    <span class="keyword">return</span> <span class="keyword">new</span> F();</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h4 id="拷贝"><a href="#拷贝" class="headerlink" title="拷贝"></a>拷贝</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">deepCopy</span>(<span class="params">p, c</span>) </span>&#123;</div><div class="line">    <span class="keyword">var</span> c = c || &#123;&#125;;</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i <span class="keyword">in</span> p) &#123;</div><div class="line">        <span class="keyword">if</span> (<span class="keyword">typeof</span> p[i] === <span class="string">'object'</span>) &#123;</div><div class="line">            c[i] = (p[i].constructor === <span class="built_in">Array</span>) ? [] : &#123;&#125;;</div><div class="line">            deepCopy(p[i], c[i]);</div><div class="line">        &#125; <span class="keyword">else</span> &#123;</div><div class="line">            c[i] = p[i];</div><div class="line">           &#125;</div><div class="line">     &#125;</div><div class="line">    <span class="keyword">return</span> c;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>参考资料：<br><a href="http://www.ruanyifeng.com/blog/2010/05/object-oriented_javascript_inheritance_continued.html" target="_blank" rel="external">http://www.ruanyifeng.com/blog/2010/05/object-oriented_javascript_inheritance_continued.html</a><br><a href="https://segmentfault.com/a/1190000002440502" target="_blank" rel="external">https://segmentfault.com/a/1190000002440502</a><br><a href="http://www.cnblogs.com/sanshi/archive/2009/07/08/1519036.html" target="_blank" rel="external">http://www.cnblogs.com/sanshi/archive/2009/07/08/1519036.html</a> </p>
 
       
     </div>
@@ -430,16 +443,16 @@ JavaScript 不包含传统的类继承模型，而是使用 prototype原型模�
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/01/21/js-cssom-view-module/" rel="next" title="CSSOM视图模式介绍">
-                <i class="fa fa-chevron-left"></i> CSSOM视图模式介绍
+              <a href="/js-closure.html" rel="next" title="JavaScript闭包学习笔记">
+                <i class="fa fa-chevron-left"></i> JavaScript闭包学习笔记
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/02/09/js-scope/" rel="prev" title="JavaScript作用域学习笔记">
-                JavaScript作用域学习笔记 <i class="fa fa-chevron-right"></i>
+              <a href="/chrome-extension.html" rel="prev" title="Chrome 常用扩展集合">
+                Chrome 常用扩展集合 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -590,7 +603,7 @@ JavaScript 不包含传统的类继承模型，而是使用 prototype原型模�
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#什么是原型？"><span class="nav-number">1.</span> <span class="nav-text">什么是原型？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#那些对象有原型"><span class="nav-number">2.</span> <span class="nav-text">那些对象有原型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#认识原型"><span class="nav-number">3.</span> <span class="nav-text">认识原型</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#方法"><span class="nav-number">3.1.</span> <span class="nav-text">方法</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#原型链"><span class="nav-number">3.2.</span> <span class="nav-text">原型链</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#属性查找"><span class="nav-number">3.3.</span> <span class="nav-text">属性查找</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#实例对象"><span class="nav-number">1.</span> <span class="nav-text">实例对象</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#继承"><span class="nav-number">2.</span> <span class="nav-text">继承</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#构造函数继承"><span class="nav-number">2.1.</span> <span class="nav-text">构造函数继承</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#prototype模式"><span class="nav-number">2.2.</span> <span class="nav-text">prototype模式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#空对象中介"><span class="nav-number">2.3.</span> <span class="nav-text">空对象中介</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#非构造函数"><span class="nav-number">2.4.</span> <span class="nav-text">非构造函数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#拷贝"><span class="nav-number">2.5.</span> <span class="nav-text">拷贝</span></a></li></ol></li></ol></div>
             
           </div>
         </section>
@@ -710,9 +723,9 @@ JavaScript 不包含传统的类继承模型，而是使用 prototype原型模�
 
     <script type="text/javascript">
       var disqus_shortname = 'gitcook';
-      var disqus_identifier = '2017/02/08/js-prototype/';
-      var disqus_title = "JavaScript原型学习笔记";
-      var disqus_url = 'https://gitcook.github.io/2017/02/08/js-prototype/';
+      var disqus_identifier = 'js-oop.html';
+      var disqus_title = "JavaScript面向对象编程学习笔记";
+      var disqus_url = 'https://gitcook.github.io/js-oop.html';
 
       function run_disqus_script(disqus_script){
         var dsq = document.createElement('script');
