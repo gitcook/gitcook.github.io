@@ -2,6 +2,7 @@
 # Site Information Settings
 # ---------------------------------------------------------------
 
+canvas_nest: true
 since: 2016
 # Put your favicon.ico into `hexo-site/source/` directory.
 favicon: /favicon.ico

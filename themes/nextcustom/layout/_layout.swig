@@ -72,6 +72,9 @@
   {% include '_scripts/third-party/lean-analytics.swig' %}
   {% include '_scripts/baidu-push.swig' %}
   {% include '_scripts/third-party/schedule.swig' %}
+  {% if theme.canvas_nest %}
+  <script src="https://cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"></script>
+  {% endif %}
 
 </body>
 </html>
