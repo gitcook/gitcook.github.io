@@ -8,4 +8,14 @@ hexo backup
 ###npm install -g hexo-cli
 ###npm install
 ###npm install hexo-deployer-git --save
+
+##安装的插件
+sitemap
+###npm install hexo-generator-sitemap --save
+###npm install hexo-generator-baidu-sitemap --save
+
+gulp压缩
+###npm install gulp -g
+###npm install gulp-clean-css gulp-uglify gulp-htmlmin gulp-imagemin gulp-htmlclean gulp --save
+
 ###之后开始写博客，写好部署好之后，别忘记 git add , ….git push origin hexo…推上去。。。
