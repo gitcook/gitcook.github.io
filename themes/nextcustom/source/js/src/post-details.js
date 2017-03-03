@@ -133,7 +133,9 @@ $(document).ready(function () {
 
     if (CONFIG.sidebar.display === 'post' || CONFIG.sidebar.display === 'always') {
       if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
-        NexT.utils.displaySidebar();
+        // NexT.utils.displaySidebar();
+        // 禁止文章内sidebar自动弹出
+        return true;
       }
     }
   };
