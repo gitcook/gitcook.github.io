@@ -9,7 +9,7 @@ hexo backup
 ###npm install
 ###npm install hexo-deployer-git --save
 
-##安装的插件
+##安装的插件(直接执行npm instal会安装package.json里面的包)
 sitemap
 ###npm install hexo-generator-sitemap --save
 ###npm install hexo-generator-baidu-sitemap --save
