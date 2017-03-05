@@ -36,8 +36,8 @@ DOM2
 `useCapture`：（可选）指定事件是否在捕获或冒泡阶段执行。true，捕获。false，冒泡。默认false。
 
 IE: (event 需要加'on')
-`ele.attachEvent(evnet, listener)`
-`ele.detachEvent(evnet, listener)`
+`ele.attachEvent(event, listener)`
+`ele.detachEvent(event, listener)`
 
 ``` javascript
 ele.addEventListener('click', fn, false);
