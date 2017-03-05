@@ -1,12 +1,12 @@
 ---
-title: Chrome 常用扩展集合
+title: Chrome常用扩展集合
 date: 2017-03-01 15:18:37
 tags: chrome
 categories: FontEnd
 description: 谷歌浏览器 Google Chrome最大的特色之一就是拥有非常丰富的插件扩展，基本你能想得的功能都有实现，Chrome WebStore (网上应用商店) 简直就像是一个宝库，然而很多优秀的扩展却被埋没。 由于浏览器是很多人每天使用时间最长的软件，因此安装一些方便实用、能提高效率的扩展可以让你上网浏览更加轻松快捷，累积下来不仅能省下可观的时间，也能将你的浏览器变成最适合自己的工具利器！因此在这里推荐些我正在使用或觉得值得收藏备用的优秀实用 Chrome 扩展供大家参考和下载。
 ---
 
-### Chrome 常用扩展集合(持续更新)
+### Chrome常用扩展集合(持续更新)
 #### [一键管理所有扩展](https://chrome.google.com/webstore/detail/ejhdjfmkegkpenillofhpmikailkjpkb)
 
 ![](http://ojf9z9wko.bkt.clouddn.com/image/yijianguanli.png)
