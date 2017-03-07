@@ -4,11 +4,11 @@
 
     
   <url>
-    <loc>https://gitcook.github.io/chrome-extension.html</loc>
-    <lastmod>2017-03-01T08:14:29.332Z</lastmod>
+    <loc>https://gitcook.github.io/FontEnd/chrome-extension.html</loc>
+    <lastmod>2017-03-07T06:10:34.963Z</lastmod>
     <data>
         <display>
-        <title>Chrome 常用扩展集合</title>
+        <title>Chrome常用扩展集合</title>
         <pubTime>2017-03-01T07:18:37.000Z</pubTime>
         
         <tag>chrome</tag>
@@ -24,7 +24,67 @@
 
     
   <url>
-    <loc>https://gitcook.github.io/js-oop.html</loc>
+    <loc>https://gitcook.github.io/FontEnd/js-event.html</loc>
+    <lastmod>2017-03-07T04:42:14.908Z</lastmod>
+    <data>
+        <display>
+        <title>JavaScript事件绑定、监听及代理学习笔记</title>
+        <pubTime>2017-03-05T05:14:52.000Z</pubTime>
+        
+        <tag>javascript</tag>
+         
+        <tag>event</tag>
+         
+         
+           
+             
+              <breadCrumb title="FontEnd" url="https://gitcook.github.io/categories/FontEnd/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://gitcook.github.io/first/hello-world.html</loc>
+    <lastmod>2017-03-07T04:42:14.906Z</lastmod>
+    <data>
+        <display>
+        <title>hello world</title>
+        <pubTime>2016-12-17T15:58:15.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="first" url="https://gitcook.github.io/categories/first/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://gitcook.github.io/life/hello-2017.html</loc>
+    <lastmod>2017-03-02T16:27:08.584Z</lastmod>
+    <data>
+        <display>
+        <title>2017 新的开始</title>
+        <pubTime>2017-01-08T14:41:11.000Z</pubTime>
+        
+        <tag>心得</tag>
+         
+         
+           
+             
+              <breadCrumb title="life" url="https://gitcook.github.io/categories/life/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://gitcook.github.io/FontEnd/js-oop.html</loc>
     <lastmod>2017-02-17T13:58:47.289Z</lastmod>
     <data>
         <display>
@@ -46,7 +106,7 @@
 
     
   <url>
-    <loc>https://gitcook.github.io/js-scope.html</loc>
+    <loc>https://gitcook.github.io/FontEnd/js-scope.html</loc>
     <lastmod>2017-02-12T10:46:29.790Z</lastmod>
     <data>
         <display>
@@ -68,29 +128,7 @@
 
     
   <url>
-    <loc>https://gitcook.github.io/js-closure.html</loc>
-    <lastmod>2017-02-12T10:46:29.789Z</lastmod>
-    <data>
-        <display>
-        <title>JavaScript闭包学习笔记</title>
-        <pubTime>2017-02-10T08:45:39.000Z</pubTime>
-        
-        <tag>javascript</tag>
-         
-        <tag>object</tag>
-         
-         
-           
-             
-              <breadCrumb title="FontEnd" url="https://gitcook.github.io/categories/FontEnd/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://gitcook.github.io/js-constructor.html</loc>
+    <loc>https://gitcook.github.io/FontEnd/js-constructor.html</loc>
     <lastmod>2017-02-12T10:46:29.789Z</lastmod>
     <data>
         <display>
@@ -112,7 +150,29 @@
 
     
   <url>
-    <loc>https://gitcook.github.io/js-prototype.html</loc>
+    <loc>https://gitcook.github.io/FontEnd/js-closure.html</loc>
+    <lastmod>2017-02-12T10:46:29.789Z</lastmod>
+    <data>
+        <display>
+        <title>JavaScript闭包学习笔记</title>
+        <pubTime>2017-02-10T08:45:39.000Z</pubTime>
+        
+        <tag>javascript</tag>
+         
+        <tag>object</tag>
+         
+         
+           
+             
+              <breadCrumb title="FontEnd" url="https://gitcook.github.io/categories/FontEnd/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://gitcook.github.io/FontEnd/js-prototype.html</loc>
     <lastmod>2017-02-09T13:13:29.853Z</lastmod>
     <data>
         <display>
@@ -134,7 +194,7 @@
 
     
   <url>
-    <loc>https://gitcook.github.io/js-cssom-view-module.html</loc>
+    <loc>https://gitcook.github.io/FontEnd/js-cssom-view-module.html</loc>
     <lastmod>2017-01-21T16:31:12.913Z</lastmod>
     <data>
         <display>
@@ -148,41 +208,6 @@
              
               <breadCrumb title="FontEnd" url="https://gitcook.github.io/categories/FontEnd/"/>
           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://gitcook.github.io/hello-2017.html</loc>
-    <lastmod>2017-01-08T15:46:12.464Z</lastmod>
-    <data>
-        <display>
-        <title>2017 新的开始</title>
-        <pubTime>2017-01-08T14:41:11.000Z</pubTime>
-        
-        <tag>心得</tag>
-         
-         
-           
-             
-              <breadCrumb title="生活" url="https://gitcook.github.io/categories/%E7%94%9F%E6%B4%BB/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://gitcook.github.io/hello-world.html</loc>
-    <lastmod>2017-01-08T15:30:53.021Z</lastmod>
-    <data>
-        <display>
-        <title>hello world</title>
-        <pubTime>2017-01-07T15:58:15.000Z</pubTime>
-        
-         
-           
         </display>
     </data>
     </url>
