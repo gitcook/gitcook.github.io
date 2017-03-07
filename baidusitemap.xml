@@ -4,6 +4,26 @@
 
     
   <url>
+    <loc>https://gitcook.github.io/life/hello-2017.html</loc>
+    <lastmod>2017-03-07T06:32:31.468Z</lastmod>
+    <data>
+        <display>
+        <title>2017 新的开始</title>
+        <pubTime>2017-01-08T14:41:11.000Z</pubTime>
+        
+        <tag>idea</tag>
+         
+         
+           
+             
+              <breadCrumb title="life" url="https://gitcook.github.io/categories/life/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://gitcook.github.io/FontEnd/chrome-extension.html</loc>
     <lastmod>2017-03-07T06:10:34.963Z</lastmod>
     <data>
@@ -64,26 +84,6 @@
 
     
   <url>
-    <loc>https://gitcook.github.io/life/hello-2017.html</loc>
-    <lastmod>2017-03-02T16:27:08.584Z</lastmod>
-    <data>
-        <display>
-        <title>2017 新的开始</title>
-        <pubTime>2017-01-08T14:41:11.000Z</pubTime>
-        
-        <tag>心得</tag>
-         
-         
-           
-             
-              <breadCrumb title="life" url="https://gitcook.github.io/categories/life/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://gitcook.github.io/FontEnd/js-oop.html</loc>
     <lastmod>2017-02-17T13:58:47.289Z</lastmod>
     <data>
@@ -128,12 +128,12 @@
 
     
   <url>
-    <loc>https://gitcook.github.io/FontEnd/js-constructor.html</loc>
+    <loc>https://gitcook.github.io/FontEnd/js-closure.html</loc>
     <lastmod>2017-02-12T10:46:29.789Z</lastmod>
     <data>
         <display>
-        <title>JavaScript构造函数学习笔记</title>
-        <pubTime>2017-02-10T05:57:04.000Z</pubTime>
+        <title>JavaScript闭包学习笔记</title>
+        <pubTime>2017-02-10T08:45:39.000Z</pubTime>
         
         <tag>javascript</tag>
          
@@ -150,12 +150,12 @@
 
     
   <url>
-    <loc>https://gitcook.github.io/FontEnd/js-closure.html</loc>
+    <loc>https://gitcook.github.io/FontEnd/js-constructor.html</loc>
     <lastmod>2017-02-12T10:46:29.789Z</lastmod>
     <data>
         <display>
-        <title>JavaScript闭包学习笔记</title>
-        <pubTime>2017-02-10T08:45:39.000Z</pubTime>
+        <title>JavaScript构造函数学习笔记</title>
+        <pubTime>2017-02-10T05:57:04.000Z</pubTime>
         
         <tag>javascript</tag>
          
