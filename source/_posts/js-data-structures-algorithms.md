@@ -4,7 +4,7 @@ date: 2017-03-10 17:45:51
 tags:
 - javascript
 - data
-categoried: FontEnd
+categories: FontEnd
 ---
 最近刷BaiDu-IFE-2017的JavaScript练习了解了树形结构的知识。这里就做一点笔记，作为自己学习的记录。
 
