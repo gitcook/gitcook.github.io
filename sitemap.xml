@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://gitcook.github.io/uncategorized/js-data-structures-algorithms.html</loc>
+    
+    <lastmod>2017-03-10T11:32:28.625Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gitcook.github.io/FontEnd/js-event.html</loc>
+    
+    <lastmod>2017-03-10T11:17:07.555Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://gitcook.github.io/life/hello-2017.html</loc>
     
     <lastmod>2017-03-07T06:32:31.468Z</lastmod>
@@ -12,13 +26,6 @@
     <loc>https://gitcook.github.io/FontEnd/chrome-extension.html</loc>
     
     <lastmod>2017-03-07T06:10:34.963Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://gitcook.github.io/FontEnd/js-event.html</loc>
-    
-    <lastmod>2017-03-07T04:42:14.908Z</lastmod>
     
   </url>
   
@@ -44,14 +51,14 @@
   </url>
   
   <url>
-    <loc>https://gitcook.github.io/FontEnd/js-closure.html</loc>
+    <loc>https://gitcook.github.io/FontEnd/js-constructor.html</loc>
     
     <lastmod>2017-02-12T10:46:29.789Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://gitcook.github.io/FontEnd/js-constructor.html</loc>
+    <loc>https://gitcook.github.io/FontEnd/js-closure.html</loc>
     
     <lastmod>2017-02-12T10:46:29.789Z</lastmod>
     
