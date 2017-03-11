@@ -4,8 +4,8 @@
 
     
   <url>
-    <loc>https://gitcook.github.io/uncategorized/js-data-structures-algorithms.html</loc>
-    <lastmod>2017-03-10T11:32:28.625Z</lastmod>
+    <loc>https://gitcook.github.io/FontEnd/js-data-structures-algorithms.html</loc>
+    <lastmod>2017-03-11T06:24:55.044Z</lastmod>
     <data>
         <display>
         <title>JavaScript数据结构与算法之--树的学习</title>
@@ -17,6 +17,31 @@
          
          
            
+             
+              <breadCrumb title="FontEnd" url="https://gitcook.github.io/categories/FontEnd/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://gitcook.github.io/FontEnd/js-binary-search-tree.html</loc>
+    <lastmod>2017-03-11T06:23:58.864Z</lastmod>
+    <data>
+        <display>
+        <title>JavaScript数据结构与算法之二叉搜索树</title>
+        <pubTime>2017-03-11T03:36:26.000Z</pubTime>
+        
+        <tag>javascript</tag>
+         
+        <tag>data</tag>
+         
+         
+           
+             
+              <breadCrumb title="FontEnd" url="https://gitcook.github.io/categories/FontEnd/"/>
+          
         </display>
     </data>
     </url>
@@ -147,12 +172,12 @@
 
     
   <url>
-    <loc>https://gitcook.github.io/FontEnd/js-constructor.html</loc>
+    <loc>https://gitcook.github.io/FontEnd/js-closure.html</loc>
     <lastmod>2017-02-12T10:46:29.789Z</lastmod>
     <data>
         <display>
-        <title>JavaScript构造函数学习笔记</title>
-        <pubTime>2017-02-10T05:57:04.000Z</pubTime>
+        <title>JavaScript闭包学习笔记</title>
+        <pubTime>2017-02-10T08:45:39.000Z</pubTime>
         
         <tag>javascript</tag>
          
@@ -169,12 +194,12 @@
 
     
   <url>
-    <loc>https://gitcook.github.io/FontEnd/js-closure.html</loc>
+    <loc>https://gitcook.github.io/FontEnd/js-constructor.html</loc>
     <lastmod>2017-02-12T10:46:29.789Z</lastmod>
     <data>
         <display>
-        <title>JavaScript闭包学习笔记</title>
-        <pubTime>2017-02-10T08:45:39.000Z</pubTime>
+        <title>JavaScript构造函数学习笔记</title>
+        <pubTime>2017-02-10T05:57:04.000Z</pubTime>
         
         <tag>javascript</tag>
          
