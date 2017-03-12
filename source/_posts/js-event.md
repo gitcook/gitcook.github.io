@@ -118,7 +118,19 @@ main.onclick = function () {
 // 或者
 main.addEventListener('click', fn, false);
 ```
+2017-3-12 更新
+1. 通常支持事件冒泡（Event Bubbling）的事件类型为鼠标事件和键盘事件，例如：mouseover, mouseout, click, keydown, keypress。
+2. 接口事件则通常不支持事件冒泡（Event Bubbling），例如：load, change, submit, focus, blur。
 
+对于这些事件的代理可以使用事件捕获来处理。
+```
+ele.addEventListener('focus', fn, true);
+ele.addEventListener('blur', fn, true);
+// IE
+ele.onfocusin = fn();
+ele.onfocusout = fn();
+```
+[代理所有input的focus和blur事件](https://gitcook.github.io/demo/ife-201703/yaoyao/demo2.html)
 参考资料:
 1. [http://www.cnblogs.com/rubylouvre/archive/2009/08/09/1542174.html](http://www.cnblogs.com/rubylouvre/archive/2009/08/09/1542174.html)
 2. [http://www.cnblogs.com/lhb25/archive/2012/11/30/oninput-and-onpropertychange-event-for-input.html](http://www.cnblogs.com/lhb25/archive/2012/11/30/oninput-and-onpropertychange-event-for-input.html)
