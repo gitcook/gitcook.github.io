@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>https://gitcook.github.io/FontEnd/js-binary-search-tree.html</loc>
+    <lastmod>2017-03-14T03:22:27.423Z</lastmod>
+    <data>
+        <display>
+        <title>JavaScript数据结构与算法之二叉搜索树</title>
+        <pubTime>2017-03-11T03:36:26.000Z</pubTime>
+        
+        <tag>javascript</tag>
+         
+        <tag>data</tag>
+         
+         
+           
+             
+              <breadCrumb title="FontEnd" url="https://gitcook.github.io/categories/FontEnd/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://gitcook.github.io/FontEnd/js-event.html</loc>
     <lastmod>2017-03-12T03:18:27.927Z</lastmod>
     <data>
@@ -32,28 +54,6 @@
         <display>
         <title>JavaScript数据结构与算法之--树的学习</title>
         <pubTime>2017-03-10T09:45:51.000Z</pubTime>
-        
-        <tag>javascript</tag>
-         
-        <tag>data</tag>
-         
-         
-           
-             
-              <breadCrumb title="FontEnd" url="https://gitcook.github.io/categories/FontEnd/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://gitcook.github.io/FontEnd/js-binary-search-tree.html</loc>
-    <lastmod>2017-03-11T06:23:58.864Z</lastmod>
-    <data>
-        <display>
-        <title>JavaScript数据结构与算法之二叉搜索树</title>
-        <pubTime>2017-03-11T03:36:26.000Z</pubTime>
         
         <tag>javascript</tag>
          

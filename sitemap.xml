@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://gitcook.github.io/FontEnd/js-binary-search-tree.html</loc>
+    
+    <lastmod>2017-03-14T03:22:27.423Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://gitcook.github.io/FontEnd/js-event.html</loc>
     
     <lastmod>2017-03-12T03:18:27.927Z</lastmod>
@@ -12,13 +19,6 @@
     <loc>https://gitcook.github.io/FontEnd/js-data-structures-algorithms.html</loc>
     
     <lastmod>2017-03-11T06:24:55.044Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://gitcook.github.io/FontEnd/js-binary-search-tree.html</loc>
-    
-    <lastmod>2017-03-11T06:23:58.864Z</lastmod>
     
   </url>
   
