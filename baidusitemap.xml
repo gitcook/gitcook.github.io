@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>https://gitcook.github.io/FontEnd/js-RegExp.html</loc>
+    <lastmod>2017-03-23T08:44:22.855Z</lastmod>
+    <data>
+        <display>
+        <title>JavaScript正则表达式学习笔记</title>
+        <pubTime>2017-03-23T06:45:46.000Z</pubTime>
+        
+        <tag>javascript</tag>
+         
+        <tag>object</tag>
+         
+         
+           
+             
+              <breadCrumb title="FontEnd" url="https://gitcook.github.io/categories/FontEnd/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://gitcook.github.io/FontEnd/js-binary-search-tree.html</loc>
     <lastmod>2017-03-14T03:22:27.423Z</lastmod>
     <data>
@@ -172,12 +194,12 @@
 
     
   <url>
-    <loc>https://gitcook.github.io/FontEnd/js-closure.html</loc>
+    <loc>https://gitcook.github.io/FontEnd/js-constructor.html</loc>
     <lastmod>2017-02-12T10:46:29.789Z</lastmod>
     <data>
         <display>
-        <title>JavaScript闭包学习笔记</title>
-        <pubTime>2017-02-10T08:45:39.000Z</pubTime>
+        <title>JavaScript构造函数学习笔记</title>
+        <pubTime>2017-02-10T05:57:04.000Z</pubTime>
         
         <tag>javascript</tag>
          
@@ -194,12 +216,12 @@
 
     
   <url>
-    <loc>https://gitcook.github.io/FontEnd/js-constructor.html</loc>
+    <loc>https://gitcook.github.io/FontEnd/js-closure.html</loc>
     <lastmod>2017-02-12T10:46:29.789Z</lastmod>
     <data>
         <display>
-        <title>JavaScript构造函数学习笔记</title>
-        <pubTime>2017-02-10T05:57:04.000Z</pubTime>
+        <title>JavaScript闭包学习笔记</title>
+        <pubTime>2017-02-10T08:45:39.000Z</pubTime>
         
         <tag>javascript</tag>
          

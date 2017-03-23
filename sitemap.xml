@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://gitcook.github.io/FontEnd/js-RegExp.html</loc>
+    
+    <lastmod>2017-03-23T08:44:22.855Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://gitcook.github.io/FontEnd/js-binary-search-tree.html</loc>
     
     <lastmod>2017-03-14T03:22:27.423Z</lastmod>
@@ -58,14 +65,14 @@
   </url>
   
   <url>
-    <loc>https://gitcook.github.io/FontEnd/js-closure.html</loc>
+    <loc>https://gitcook.github.io/FontEnd/js-constructor.html</loc>
     
     <lastmod>2017-02-12T10:46:29.789Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://gitcook.github.io/FontEnd/js-constructor.html</loc>
+    <loc>https://gitcook.github.io/FontEnd/js-closure.html</loc>
     
     <lastmod>2017-02-12T10:46:29.789Z</lastmod>
     
